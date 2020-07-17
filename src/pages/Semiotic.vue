@@ -23,16 +23,16 @@
                 <li>Realize the final product</li>
             </ul>
         </div>
-        <div class="col-12 col-sm-12 col-xl-5 col-md-5 col-lg-5">
+        <div class="col-12 col-sm-12 col-xl-5 col-md-5 col-lg-5 pt-5 pt-md-0">
             <img src="../../public/semiotic/Pc.png" alt="" class="mr-5">
         </div>
       </div>
       <div class="row light pb-5">
-          <div class="col-1"></div>
-            <div class="col-5 mt-5 align-self-center">
+          <div class="col-1 d-none d-md-block"></div>
+            <div class="col-5 mt-5 align-self-center d-none d-md-block">
                 <img src="../../public/semiotic/VPD.png" alt="VPD" class="vpd">
             </div>
-            <div class="col mt-5 ml-5">
+            <div class="col-12 col-md mt-5 ml-md-5">
                 <h2>PROFILING OF USERS</h2>
                 <p>We defined the possible target for our product. <br> We chose the primary school because if they like it they will probably return with their parents.</p>
                 <h2>PROFILING OF CONSUMERS</h2>
@@ -52,12 +52,20 @@
                 <p>We did some printing tests to make sure the origami was simple to do and that there would not be problem with the card thickness. </p>
             </div>
             <div class="col-2"></div>
+            <div class="col-12 mt-5 align-self-center d-block d-md-none">
+                <img src="../../public/semiotic/VPD.png" alt="VPD" class="vpd">
+            </div>
     </div>
-    <div class="row dark pb-5 pt-5"><div class="col-2"></div><h2 class="col">FINAL PRODUCT</h2></div>
+    <div class="row dark pb-5 pt-5">
+        <div class="col-2 d-none d-md-block"></div>
+        <div class="col-1 d-block d-md-none"></div>
+        <h2 class="col">FINAL PRODUCT</h2>
+        <div class="col-1 d-block d-md-none"></div>
+    </div>
     <div class="row dark pb-5 justify-content-around">
         <div class="col-1"></div>
-        <img src="../../public/semiotic/VolantinoRetro.png" alt="" class="col-3">
-        <img src="../../public/semiotic/VolantinoFronte.png" alt="" class="col-3">
+        <img src="../../public/semiotic/VolantinoRetro.png" alt="" class="col-md-3 col">
+        <img src="../../public/semiotic/VolantinoFronte.png" alt="" class="col-md-3 col">
         <div class="col-1"></div>
     </div>
   </div>
@@ -87,5 +95,4 @@ img{
 .row{
     overflow-x: hidden;
 }
-
 </style>

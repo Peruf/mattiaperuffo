@@ -81,9 +81,9 @@
             </div>
           </div>
         </div>
-        <div class="container d-block d-md-none">
+        <div class="container-fluid d-block d-md-none">
           <div class="row">
-            <div class="col">
+            <div class="col px-0">
               <p><b>Name: </b> Mattia Peruffo</p>
               <p><b>DoB: </b> 10 December 1999</p>
               <p><b>Nationality: </b>Italian</p>
@@ -110,9 +110,9 @@
             </div>
           </div>
         </div>
-        <div class="container d-block d-md-none">
+        <div class="container-fluid d-block d-md-none">
           <div class="row">
-            <div class="col">
+            <div class="col px-0">
               <p><b>Native Speaker: </b>Italian</p>
               <p><b>Language: </b>English - B2</p>
               <p><b>Third Language: </b>Spanish - A1/b</p>
@@ -142,9 +142,9 @@
             </div>
           </div>
         </div>
-        <div class="container d-block d-md-none">
+        <div class="container-fluid d-block d-md-none">
           <div class="row">
-            <div class="col">
+            <div class="col px-0">
               <p><b>Main: </b>HTML - PHP - CSS - MYSQL - JavaScript</p>
               <p><b>Framework: </b>Vue.js - Bootstrap - Vue Material</p>
               <p><b>Other: </b> C - C++ - C# - Java</p>
@@ -164,9 +164,9 @@
             </div>
           </div>
         </div>
-        <div class="container d-block d-md-none">
+        <div class="container-fluid d-block d-md-none">
           <div class="row">
-            <div class="col">
+            <div class="col px-0">
               <p><b>Main: </b> Photoshop - Axure - Illustrator - Balsamiq</p>
               <p><b>Other: </b> InDesign - InVision</p>
             </div>
@@ -209,5 +209,7 @@ b, .bold{
 }
 .right{
   text-align: right;
+}
+@media only screen and (max-width: 600px){
 }
 </style>
