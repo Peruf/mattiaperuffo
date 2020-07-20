@@ -1,16 +1,16 @@
 <template>
   <div class="container-fluid">
     <div class="row first-row">
-      <div class="img col-lg col-md-12 col-sm-12 col-xl d-block d-sm-block d-md-block d-lg-none">
+      <div class="imgS col-lg col-md-12 col-sm-12 col-xl d-block d-lg-none">
       </div>
       <div class="txt col-lg col-md-12 col-sm-12 col-xl light">
           <div class="container centered">
             <div class="row justify-content-around">
-              <div class="col-2 d-sm-none d-md-block"></div>
+              <div class="col-2 d-none d-lg-block"></div>
               <p class="col iam display-4 align-self-center">I am</p>
             </div>
             <div class="row justify-content-around">
-              <div class="col-2 d-sm-none d-md-block"></div>
+              <div class="col-2 d-none d-lg-block"></div>
               <p class="col name display-4">MATTIA PERUFFO</p>
             </div>
             <div class="row justify-content-center buttons">
@@ -18,7 +18,7 @@
               <div class="col-md-7 col-lg-3 curriculum"><router-link to="/curriculum" class="btn  btn-outline-primary btn-block">CURRICULUM </router-link></div>
             </div>
           </div>
-          <footer class="fixed-bottom container mb-5">
+          <footer class="fixed-bottom container mb-lg-5">
               <div class="row justify-content-center">
                   <a class="col-md-1 col-sm-1 col-2 fab fa-facebook fa-lg" href="https://www.facebook.com/mattia.peruffo.790" target="_blank"></a>
                   <a class="col-md-1 col-sm-1 col-2 fab fa-instagram fa-lg" href="https://www.instagram.com/mattia_peruffo/" target="_blank"></a>
@@ -44,7 +44,9 @@ body{
   height: 100vh;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
-
+.img, .txt{
+  height: 100vh;
+}
 body, html {
   overflow-x: hidden;
 }
@@ -65,6 +67,13 @@ body {
 } 
 .img{
     background-image: url(../assets/Me_Ferragosto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.imgS{
+    height: 25vh;
+    background-image: url(../assets/SfondoCell.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -154,27 +163,24 @@ p, li{
   padding: 0 !important;
 } 
 /* medium device */
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 991.98px){
   .curriculum, .portfolio{
     margin-top: 3% !important;
   }
-  .img, .txt{
-    height: 100vh;
+  .imgS{
+    height: 50vh;
   }
-}
-/* tablet vertiacle */
-@media only screen and (min-width: 600px){
-  .curriculum, .portfolio{
-    margin-top: 3% !important;
+  .txt{
+    height: 67vh;
   }
 }
 /* telefono verticale */
 @media only screen and (max-width: 600px){
-  .img{
-    height: 60vh;
+  .imgS{
+    height: 30vh;
   }
   .txt{
-    height: 75vh;
+    height: 67vh;
   }
   .centered {
     position: absolute;
@@ -185,6 +191,15 @@ p, li{
   }
   html, body {
     overflow: scroll;
+  }
+  .titleSmart{
+      height: 100vh;
+  }
+  .tit{
+      position: absolute;
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
   }
 }
 </style>

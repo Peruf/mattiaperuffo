@@ -1,7 +1,9 @@
 <template>
   <div class="container-fluid dark">
-    <navbar></navbar>
-    <titolo ToBack="/" back="Home" :data="null" nome="Curriculum" to="Portfolio" ToForward="/portfolio"></titolo> 
+    <div class="titleSmart dark">
+      <navbar></navbar>
+      <titolo class="tit" ToBack="/" back="Home" :data="null" nome="Curriculum" to="Portfolio" ToForward="/portfolio"></titolo> 
+    </div>
     <div class="row">
       <div class="col-12 col-lg-1"></div>
       <div class="col-12 col-lg-5 pt-5 pl-5 pr-5">
