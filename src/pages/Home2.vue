@@ -202,4 +202,13 @@ p, li{
       transform: translateY(-50%);
   }
 }
+/* lg device */
+@media (min-width: 992px) { 
+  .h25{
+    min-height: 25vh;
+  }
+  .h75{
+    min-height: 75vh;
+  }
+}
 </style>

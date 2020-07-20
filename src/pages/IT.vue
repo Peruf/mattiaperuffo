@@ -1,11 +1,14 @@
 <template>
   <div>
-    <div class="titleSmart dark">
+    <div class="titleSmart dark h25">
         <navbar></navbar>
         <titolo class="tit" ToBack="/portfolio" back="Portfolio" data="march 2020 - june 2020" nome="IT Course Project" to="Curriculum" ToForward="/curriculum"></titolo>
       </div>
     <div class="container-fluid">
-      <div class="row dark pb-5 pt-5">
+      <div class="row dark pb-5 p-0 p-md-5 h75">
+          <div class="col-12 pb-5 align-self-center d-block d-md-none">
+              <img src="../../public/it/Boardgame.png">
+          </div>
           <div class="col"></div>
           <div class="col-12 col-md-4 align-self-center">
               <h2>INTRODUCTION</h2>
@@ -24,7 +27,7 @@
               </ul>
           </div>
           <div class="col-1"></div>
-          <div class="col-12 col-md-5 col-lg-3 pt-5 pt-md-0 align-self-center">
+          <div class="col-md-5 col-lg-3 align-self-center d-none d-md-block">
               <img src="../../public/it/Boardgame.png" alt="" class="mr-md-5">
           </div>
           <div class="col"></div>
@@ -64,24 +67,33 @@
             </div>
             <div class="col-1"></div>
       </div>
-      <div class="row dark pb-5 pt-5 justify-content-center">
-            <div class="col-5 align-self-center d-none d-lg-block">
+      <div class="row dark pb-5 pt-5">
+            <div class="col-5 align-self-center d-none d-lg-block ml-lg-5 ml-0">
                 <img src="../../public/it/Cell.png" alt="">
             </div>
             <div class="col-1"></div>
-            <div class="col-12 col-md-5 align-self-center">
+            <div class="col-12 col-md-10 col-lg-5 align-self-center">
                 <h2>CREATE THE WEBSITE</h2>
                 <h4>Search</h4>
-                <p>Testo</p>
+                <p>As planned we develop an home page with the list of all the games. <br>
+                  If you wanna navigate into the site you must insert an username. <br>
+                  In order to have an easier navigation trought the pages we used a top app bar where you can search a specific game or 
+                  change page. <br>
+                  There are three main pages where the games are sorted for popularity, user rate and time of play. <br>
+                  In other two pages the games are sorted for year of publication and for number of player, but you can decide which year you desire and how many players can play it. <br>
+                  In the specific game page you can add it to your favorites, rate it and get all its informations. Moreover you can comment it and see the comments of the other players. <br>
+                  There is another page with the list of all the favorites games of the user, it is usefull if you need to find your games faster. <br>
+                  The last page is for the informations about the developers.
+                </p>
             </div>
         </div>
         <div class="row dark p-0 px-md-5 pt-md-5 mb-md-0 justify-content-center">
           <div class="col-12 align-self-center d-block d-lg-none">
                 <img src="../../public/it/Cell.png" alt="">
             </div>
-          <div class="col-12 col-lg pt-5"><img src="../../public/it/Home.png" alt=""></div>
+          <div class="col-12 col-lg pt-5 pt-lg-0 align-self-center"><img src="../../public/it/Home.png" alt=""></div>
           <div class="col-1"></div>
-          <div class="col-12 col-lg pt-5 pt-lg-0"><img src="../../public/it/Drawer.png" alt=""></div>
+          <div class="col-12 col-lg pt-5 pt-lg-0 align-self-center"><img src="../../public/it/Drawer.png" alt=""></div>
         </div>
         <div class="row dark p-0 p-md-5 justify-content-center">
           <div class="col-12 col-lg pt-5 pt-lg-0 align-self-center"><img src="../../public/it/Gioco.png" alt=""></div>
@@ -106,13 +118,5 @@ export default {
 </script>
 
 <style>
-.h25{
-    height: 25vh;
-}
-.h75{
-    height: 75vh;
-}
-.h{
-  min-height: 100vh;
-}
+
 </style>

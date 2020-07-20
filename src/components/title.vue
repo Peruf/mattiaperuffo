@@ -4,9 +4,9 @@
               <i class="fas fa-arrow-left fa-lg"></i>
               <span class="back ml-2">{{back}}</span>
           </router-link>
-          <div class="title col">
+          <div class="title col pl-0 ">
             <span class="date md-title text-white">{{data}}</span>
-            <p class="mt-3"><span class="display-3 highlight pl-2 pr-2">{{nome}}</span></p>
+            <p class="mt-3"><span class="display-3 highlight px-md-2 px-0">{{nome}}</span></p>
           </div>
           <router-link :to="ToForward" class="col-2 mt-5 pr-5 d-none d-lg-block">
               <span class="back">{{to}}</span>

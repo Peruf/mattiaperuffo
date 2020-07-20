@@ -1,10 +1,13 @@
 <template>
   <div class="container-fluid">
-      <div class="titleSmart dark row">
+      <div class="titleSmart dark row h25">
         <navbar></navbar>
         <titolo class="tit col-12" ToBack="/portfolio" back="Portfolio" data="september 2019 - january 2019" nome="PIG Course Project" to="IT Project" ToForward="/portfolio/IT_project"></titolo>
       </div>
-      <div class="row dark pt-5 pb-5">
+      <div class="row dark pt-5 pb-5 h75">
+        <div class="col-12 col-lg-3 col-md-5 pb-5 pt-md-0 align-self-center d-block d-md-none">
+            <img src="../../public/pig/Logo.png" alt="" class="mr-5">
+        </div>
         <div class="col"></div>
         <div class="col-12 col-lg-3 col-md-3 align-self-center">
             <h2>INTRODUCTION</h2>
@@ -25,7 +28,7 @@
             </ul>
         </div>
         <div class="col-1"></div>
-        <div class="col-12 col-lg-3 col-md-5 pt-5 pt-md-0 align-self-center">
+        <div class="col-12 col-lg-3 col-md-5 pt-5 pt-md-0 align-self-center d-none d-md-block">
             <img src="../../public/pig/Logo.png" alt="" class="mr-5">
         </div>
         <div class="col"></div>
@@ -67,7 +70,7 @@ You can also scan a QR code located in the plot sold by the nurseryman. </p>
               <img src="../../public/pig/Prototype.png" alt="">
           </div>
           <div class="col-1 d-md-none d-lg-block"></div>
-          <div class="col-12 col-md-10 col-lg-5 align-self-center">
+          <div class="col-12 col-md-10 col-lg-5 align-self-center pb-5 pb-md-0">
               <h2>HIGH FIDELTY PROTOTYPE</h2>
               <h4>Search</h4>
               <p>It is the main page. It can be reached by clicking the first icon of bottom navigation bar. Without 
@@ -105,10 +108,4 @@ export default {
 </script>
 
 <style scoped>
-.h25{
-    height: 25vh;
-}
-.h75{
-    height: 75vh;
-}
 </style>

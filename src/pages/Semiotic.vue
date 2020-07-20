@@ -1,11 +1,14 @@
 <template>
     <div>
-        <div class="titleSmart dark">
+        <div class="titleSmart dark h25">
             <navbar></navbar>
             <titolo class="tit" ToBack="/portfolio" back="Portfolio" data="march 2019 - may 2019" nome="Semiotic Course Project" to="PIG Progect" ToForward="/portfolio/pig_project"></titolo>  
         </div>
         <div class="container-fluid">
-            <div class="row dark pb-5">
+            <div class="row dark pb-5 h75">
+                <div class="col-12 col-sm-12 col-xl-5 col-md col-lg-5 pb-5 pt-md-0 align-self-center d-block d-md-none">
+                    <img src="../../public/semiotic/Pc.png" alt="" class="mr-5">
+                </div>
                 <div class="col-2 d-md-none d-lg-block"></div>
                 <div class="col-1 d-md-block d-lg-none"></div>
                 <div class="col-12 col-sm-12 col-xl-3 col-md-4 col-lg-3 mt-5">
@@ -27,7 +30,7 @@
                         <li>Realize the final product</li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-12 col-xl-5 col-md col-lg-5 pt-5 pt-md-0 align-self-center">
+                <div class="col-12 col-sm-12 col-xl-5 col-md col-lg-5 pt-5 pt-md-0 align-self-center d-none d-md-block">
                     <img src="../../public/semiotic/Pc.png" alt="" class="mr-5">
                 </div>
                 <div class="col-1 d-md-block d-lg-none"></div>
@@ -73,8 +76,8 @@
             </div>
             <div class="row dark pb-5 justify-content-around">
                 <div class="col-1"></div>
-                <img src="../../public/semiotic/VolantinoRetro.png" alt="" class="col-lg-4 col-md-5 col">
-                <img src="../../public/semiotic/VolantinoFronte.png" alt="" class="col-lg-4 col-md-5 col">
+                <div class="col-lg-4 col-md-5 col-12"><img src="../../public/semiotic/VolantinoRetro.png" alt=""></div>
+                <div class="col-lg-4 col-md-5 col-12"><img src="../../public/semiotic/VolantinoFronte.png" alt=""></div>
                 <div class="col-1"></div>
             </div>
         </div>
@@ -101,6 +104,7 @@ export default {
 <style scoped>
 img{
     max-height: 800px;
+    height: auto;
 }
 .row{
     overflow-x: hidden;
